@@ -103,5 +103,6 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-problems
-!/problems/utils.py
+problems/*
+!problems/utils.py
+!problems/README.md

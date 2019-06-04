@@ -58,6 +58,10 @@ def return_proper_divisors(n):
     temp = return_divisors(n)
     return [i for i in temp if i != n]
 
+def digits_sum(n):
+    return sum_list(list(map(int, list(str(n)))))
+
+
 def sum_list(list):
     sum = 0
     for i in list:

@@ -74,3 +74,14 @@ def is_abundant(n):
         return True
     else:
         return False
+
+def permutations(s):
+    return permutation(s, "")
+
+def permutation(s, prefix):
+    if len(s) == 0:
+        print(prefix)
+    else:
+        for i in range(0, len(s)):
+            rem = s[0:i] + s[i+1:]
+            permutation(rem, prefix + s[i])
